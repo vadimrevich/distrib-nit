@@ -1,0 +1,4 @@
+make_uninstall.nitexe001.cmd -- script file for uninstall nitexe001.exe packet\nÂ
+install-nitexe001.SFX.cmd -- a script file for installing nitexe001.exe packets. No Need the password.\nÂ
+descript.ion -- directory description (this file)\nÂ
+nitexe001.exe -- file for initial adjust of the Windows AD Computer and Servers (first Version)\nThe File needs a password!\nÂ

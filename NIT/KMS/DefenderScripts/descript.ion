@@ -1,0 +1,11 @@
+Add-Defender-Exclusion-New.ps1 -- Add Defender Exclusions to KMS Programs\nВ
+Add-Defender-Exclusion-Prepare.ps1 -- Add Defender Exclusions to most Common Folders at Windows\nВ
+Add_Defender_Exclusions.000.wsf -- WSH Script for Add Defender Exclusions\nВ
+Defender_Exclusions.vbs -- Open the Window with Defender Exclusions\nВ
+Defender_HistoryProtection.vbs -- Open the Window with Defender's Protection History\nВ
+Defender_Samples.vbs -- Open the Main Protection Window of the Windows Defender\nВ
+descript.ion -- Directory Description (this file)\nВ
+info.txt -- Information about Temporary Turn off the Windows Defender Protection
+readme-Defender.txt -- Описание работы скриптов (Windows Pllain Text)\n-- Script Working Description (Rus)\n\nВ
+README.md -- Описание работы скриптов (Markdown)\n-- Script Working Description (Rus)\n\nВ
+Stop_Defender_Settings.vbs -- Open the Windows with Stop Defender Protection\nВ

